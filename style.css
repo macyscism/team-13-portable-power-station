@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{--navy:#071b33;--blue:#0b5ea8;--sky:#7fbced;--gold:#f2b134;--ink:#142033;--muted:#657287;--line:#dfe6ee}
+:root{--navy:#071b33;--blue:#0b5ea8;--sky:#f0f8ff;--gold:#f2b134;--ink:#142033;--muted:#657287;--line:#dfe6ee}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'DM Sans',Arial,sans-serif;color:var(--ink);background:#8bc1f8;line-height:1.65}
 .hero{min-height:700px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 30%,#1676c4 0,transparent 35%),linear-gradient(135deg,#061a32,#0a4f8d 65%,#0b6ab7)}
 .hero:after{content:"";position:absolute;left:-10%;right:-10%;bottom:-205px;height:360px;background:#f7f9fb;border-radius:50% 50% 0 0/30% 30% 0 0}
