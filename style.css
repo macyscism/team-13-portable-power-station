@@ -810,3 +810,98 @@ padding-bottom: 280px;
     font-size: 20px;
   }
 }
+
+
+/* ===== GANTT CHART STYLING ===== */
+
+.timeline-section {
+  background: #eef6fd;
+}
+
+.timeline-section > h2 {
+  margin-top: 12px;
+  max-width: 850px;
+}
+
+.timeline-intro {
+  max-width: 800px;
+}
+
+.gantt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.gantt-download {
+  margin-top: 0;
+}
+
+.gantt-fullsize {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.gantt-fullsize:hover {
+  text-decoration: underline;
+}
+
+/* Center and limit the chart preview */
+
+.gantt-chart-frame {
+  width: 100%;
+  max-width: 850px;
+  margin: 28px auto 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(7, 27, 51, 0.06);
+}
+
+.gantt-chart-frame a {
+  display: block;
+}
+
+.gantt-chart-image {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  min-width: 0;
+  height: auto;
+}
+
+.gantt-caption {
+  max-width: 850px;
+  margin: 14px auto 0;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gantt-note {
+  max-width: 850px;
+  margin: 6px auto 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Adjust the layout for smaller screens */
+
+@media (max-width: 600px) {
+  .gantt-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .gantt-download {
+    max-width: 100%;
+    text-align: center;
+  }
+}
