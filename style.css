@@ -402,3 +402,68 @@ padding: 50px 24px !important;
 padding-bottom: 280px;
 }
 }
+
+
+
+/* Project specifications */
+
+.specifications {
+  background: #eef6fd;
+}
+
+.section-intro {
+  max-width: 760px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.spec-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.spec-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--blue);
+}
+
+.spec-card h3 {
+  margin-top: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  color: var(--navy);
+}
+
+.spec-card p:last-child {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Responsive specifications grid */
+
+@media (max-width: 800px) {
+  .spec-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+}
