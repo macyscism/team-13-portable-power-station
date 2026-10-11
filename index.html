@@ -218,62 +218,117 @@
 </section>
 
 
-<section class="progress-section" id="progress">
-  <div class="section-label">PROJECT PROGRESS • WEEK 5</div>
 
-  <h2>From planning to detailed design.</h2>
+<section class="progress-section" id="progress">
+  <div class="section-label">PROJECT PROGRESS</div>
+
+  <h2>From project scope to subsystem design.</h2>
 
   <p class="section-intro">
-    Our team is moving from general project research toward detailed
-    subsystem design. This update summarizes the work documented in
-    our October 2, 2026 weekly status report.
+    The project has progressed from initial planning and requirements
+    toward a more detailed electrical system architecture. These
+    highlights summarize our documented progress during Weeks 1, 2, 3, and 5.
   </p>
 
   <div class="progress-meta">
-    <span class="progress-pill">Status Report: October 2, 2026</span>
-    <span class="progress-pill">Focus: System Architecture &amp; MPPT</span>
+    <span class="progress-pill">Fall 2026</span>
+    <span class="progress-pill">Latest report: October 2, 2026</span>
   </div>
 
-  <div class="progress-grid">
+  <div class="progress-history-grid">
 
-    <article class="progress-card">
-      <div class="progress-card-heading">
-        <span class="progress-index">01</span>
-        <h3>Accomplishments</h3>
+    <article class="history-card">
+      <div class="history-card-top">
+        <span class="history-week">WEEK 1</span>
+        <span class="history-phase">Planning</span>
       </div>
 
-      <ul class="progress-list">
-        <li>Developed a system-level block diagram showing the major components and how power and information flow through the system.</li>
-        <li>Met with Dr. Muljadi to discuss MPPT design and the hill-climbing control method.</li>
-        <li>Researched Texas Instruments reference designs to better understand converter circuitry and component selection.</li>
-        <li>Acquired a commercial solar charge controller to examine as a reference for our team-designed system.</li>
+      <h3>Project Foundation</h3>
+
+      <ul>
+        <li>Selected the Portable Solar Emergency Power Station as the capstone project.</li>
+        <li>Established preliminary battery, AC output, solar input, and monitoring targets.</li>
+        <li>Created the initial work breakdown structure and two-semester project schedule.</li>
+        <li>Identified potential subject matter experts for electrical, embedded, and thermal design.</li>
       </ul>
     </article>
 
-    <article class="progress-card">
-      <div class="progress-card-heading">
-        <span class="progress-index">02</span>
-        <h3>Challenges &amp; Risks</h3>
+    <article class="history-card">
+      <div class="history-card-top">
+        <span class="history-week">WEEK 2</span>
+        <span class="history-phase">Scope Refinement</span>
       </div>
 
-      <ul class="progress-list">
-        <li>Translating MPPT theory into a practical DC-DC converter circuit.</li>
-        <li>Determining component values and selecting appropriate hardware.</li>
-        <li>Coordinating the power stage, filtering, voltage/current sensing, and control algorithm.</li>
-        <li>Reducing the risk of integration problems between the MPPT converter, battery, controller, sensors, and display.</li>
+      <h3>Defining the Engineering Work</h3>
+
+      <ul>
+        <li>Refined the proposal following faculty feedback on the project's technical depth.</li>
+        <li>Established the team-designed MPPT converter, sensing circuits, embedded control, and firmware as important custom-design elements.</li>
+        <li>Identified thermal control and a team-developed local interface as additional design goals.</li>
+        <li>Left the final custom-design scope of the inverter and battery-management circuitry open for further guidance.</li>
       </ul>
     </article>
 
-    <article class="progress-card">
-      <div class="progress-card-heading">
-        <span class="progress-index">03</span>
-        <h3>Next Steps</h3>
+    <article class="history-card">
+      <div class="history-card-top">
+        <span class="history-week">WEEK 3</span>
+        <span class="history-phase">Design Direction</span>
       </div>
 
-      <ul class="progress-list">
-        <li>Review the PSCAD modeling resources and renewable-energy materials provided by Dr. Muljadi.</li>
-        <li>Begin exploring a model of the proposed MPPT system.</li>
-        <li>Continue researching the hill-climbing algorithm, converter design, filtering, and voltage/current sensing.</li>
+      <h3>MPPT Design Approved</h3>
+
+      <ul>
+        <li>Met with Dr. Geiger to discuss the revised technical scope.</li>
+        <li>Received approval to focus the primary custom power-electronics effort on the MPPT converter.</li>
+        <li>Divided project responsibilities so team members could begin research in parallel.</li>
+        <li>Identified the need to coordinate subsystem interfaces and obtain further SME guidance.</li>
+      </ul>
+    </article>
+
+    <article class="history-card">
+      <div class="history-card-top">
+        <span class="history-week">WEEK 5</span>
+        <span class="history-phase">System Architecture</span>
+      </div>
+
+      <h3>Moving Toward Detailed Design</h3>
+
+      <ul>
+        <li>Developed a system-level block diagram showing major components and the flow of power and information.</li>
+        <li>Consulted Dr. Muljadi about MPPT operation and the hill-climbing control method.</li>
+        <li>Researched Texas Instruments reference designs and acquired a commercial solar charge controller for reference.</li>
+        <li>Identified PSCAD modeling and preliminary component selection as important next steps.</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <div class="progress-lower-grid">
+
+    <article class="progress-detail-card">
+      <h3>Current Technical Challenges</h3>
+
+      <p>
+        Translating the MPPT algorithm into a practical DC-DC converter
+        requires coordinated decisions about the power stage, filtering,
+        voltage and current sensing, control, and component selection.
+      </p>
+
+      <p>
+        The team must also ensure that the converter, battery, embedded
+        controller, sensors, and display can operate together reliably.
+        Component availability and the complexity of custom circuitry
+        remain project risks.
+      </p>
+    </article>
+
+    <article class="progress-detail-card next-steps-card">
+      <h3>Next Steps Documented in Week 5</h3>
+
+      <ul>
+        <li>Review the PSCAD modeling resources and renewable-energy materials from Dr. Muljadi.</li>
+        <li>Begin modeling the proposed MPPT system.</li>
+        <li>Continue researching converter design, filtering, sensing, and the hill-climbing algorithm.</li>
         <li>Continue component research and develop a preliminary bill of materials.</li>
       </ul>
     </article>
@@ -281,10 +336,12 @@
   </div>
 
   <p class="progress-note">
-    Historical project snapshot based on the Week 5 status report.
-    Activities and plans should be updated as the project progresses.
+    Retrospective summary of submitted weekly status reports.
+    The next steps above reflect the Week 5 plan and are not presented
+    as completed work.
   </p>
 </section>
+
 
 
 <section id="team">
