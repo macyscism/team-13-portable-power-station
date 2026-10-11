@@ -1054,3 +1054,141 @@ padding-bottom: 280px;
     padding: 22px;
   }
 }
+
+
+/* ===== SMEs & ADVISORS ===== */
+
+.smes-section {
+  background: #eef6fd;
+}
+
+.smes-section > h2 {
+  margin-top: 12px;
+  max-width: 850px;
+}
+
+.smes-intro {
+  max-width: 800px;
+}
+
+.sme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.sme-card {
+  min-width: 0;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(7, 27, 51, 0.04);
+}
+
+.sme-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sme-number {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e9f5ff;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sme-status {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sme-status.consulted {
+  background: #e7f5ec;
+  color: #267447;
+}
+
+.sme-status.planned {
+  background: #fff3d8;
+  color: #8a5b00;
+}
+
+.sme-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.sme-specialty {
+  margin-top: 6px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sme-description {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.sme-takeaway {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f4f8fc;
+  border-left: 3px solid var(--gold);
+}
+
+.sme-takeaway span {
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sme-takeaway p {
+  margin-top: 7px;
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.smes-note {
+  max-width: 850px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .sme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sme-card {
+    padding: 22px;
+  }
+
+  .sme-card h3 {
+    font-size: 22px;
+  }
+}
