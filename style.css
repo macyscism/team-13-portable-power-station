@@ -652,3 +652,161 @@ padding-bottom: 280px;
     padding: 20px;
   }
 }
+
+
+
+/* ===== PROJECT PROGRESS HISTORY ===== */
+
+.progress-section {
+  background: #f7f9fb;
+}
+
+.progress-section > h2 {
+  margin-top: 12px;
+  max-width: 900px;
+}
+
+.progress-section .section-intro {
+  max-width: 780px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.progress-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.progress-pill {
+  display: inline-block;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: #e9f5ff;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progress-history-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.history-card {
+  min-width: 0;
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(7, 27, 51, 0.04);
+}
+
+.history-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.history-week {
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: #e9f5ff;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.history-phase {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.history-card h3,
+.progress-detail-card h3 {
+  margin-bottom: 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.history-card ul,
+.progress-detail-card ul {
+  padding-left: 19px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.history-card li,
+.progress-detail-card li {
+  padding-left: 3px;
+  margin-bottom: 9px;
+}
+
+.history-card li:last-child,
+.progress-detail-card li:last-child {
+  margin-bottom: 0;
+}
+
+.progress-lower-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.progress-detail-card {
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.progress-detail-card p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.next-steps-card {
+  background: #eef6fd;
+}
+
+.progress-note {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+  .progress-history-grid,
+  .progress-lower-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-card,
+  .progress-detail-card {
+    padding: 22px;
+  }
+
+  .history-card h3,
+  .progress-detail-card h3 {
+    font-size: 20px;
+  }
+}
