@@ -905,3 +905,26 @@ padding-bottom: 280px;
     text-align: center;
   }
 }
+
+
+/* FINAL OVERRIDE: keep the Gantt preview small */
+
+.timeline-section .gantt-chart-frame {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 28px auto 0 !important;
+  overflow: hidden !important;
+}
+
+.timeline-section .gantt-chart-frame a {
+  display: block;
+  width: 100%;
+}
+
+.timeline-section .gantt-chart-image {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+}
